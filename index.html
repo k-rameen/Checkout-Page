@@ -11,7 +11,7 @@
 
     <section>
         <h2>Your Cart</h2>
-        <img src="https://pixabay.com/photos/ring-diamond-ring-wedding-ring-4279997/" alt="Diamond ring with a white background">
+        <img src="ring.jpg" alt="Diamond ring with a white background">
 
         <p>Total Cost: $1,542</p>
     </section>
@@ -19,27 +19,28 @@
     <section>
         <h2>Payment Information</h2>
         <form>
-            <label for="card-name">Cardholder's Name</label>
+            <label for="card-name">Cardholder's Name<span aria-hidden="true" class="required">*</span></label>
             <input id="card-name" name="card-name" type="text" placeholder="e.g John Smith" required>
 
             <br/>
 
-            <label for="card-number">Card Number</label>
+            <label for="card-number">Card Number<span aria-hidden="true" class="required">*</span></label>
             <input id="card-number" name="card-number" type="text" placeholder="e.g XXXX-XXXX-XXXX" required  aria-describedby="card-number-help">
             <p id="card-number-help">Your card number is the 16-digit sequence on the front facing side.</p>
             
             <p>Please enter the remaining card information: </p>
 
-            <label for="card-expiry">Card Expiry Date</label>
+            <label for="card-expiry">Card Expiry Date<span aria-hidden="true" class="required">*</span></label>
             <input id="card-expiry" name="card-expiry" type="text" placeholder="e.g MM/DD" required>
 
             <br/>
 
-            <label for="card-cvv">CVV</label>
+            <label for="card-cvv">CVV<span aria-hidden="true" class="required">*</span></label>
             <input id="card-cvv" name="card-cvv" type="text" placeholder="e.g XXX" required>
 
         <br/>
         <br/>
+        
         <input type="submit">
             
         </form>
