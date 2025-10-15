@@ -19,21 +19,29 @@
     <section>
         <h2>Payment Information</h2>
         <form>
-            <label>Cardholder's Name</label>
+            <label for="card-name">Cardholder's Name</label>
             <input id="card-name" name="card-name" type="text" placeholder="e.g John Smith" required>
 
-            <label>Cardholder's Name</label>
-            <input id="card-number" name="card-number" type="text" placeholder="e.g XXXX-XXXX-XXXX" required>
+            <br/>
+
+            <label for="card-number">Card Number</label>
+            <input id="card-number" name="card-number" type="text" placeholder="e.g XXXX-XXXX-XXXX" required  aria-describedby="card-number-help">
+            <p id="card-number-help">Your card number is the 16-digit sequence on the front facing side.</p>
             
             <p>Please enter the remaining card information: </p>
 
-            <label>Card Expiry Date</label>
+            <label for="card-expiry">Card Expiry Date</label>
             <input id="card-expiry" name="card-expiry" type="text" placeholder="e.g MM/DD" required>
 
             <br/>
 
-            <label>CVV</label>
-            <input id="card-number" name="card-number" type="text" placeholder="e.g XXX" required>
+            <label for="card-cvv">CVV</label>
+            <input id="card-cvv" name="card-cvv" type="text" placeholder="e.g XXX" required>
+
+        <br/>
+        <br/>
+        <input type="submit">
+            
         </form>
     </section>
 
